@@ -35,16 +35,26 @@ public class Amphibians extends Animals {
 
     @Override
     public void eat() {
+        if (getNickname().equals("Лягушка"))
+            System.out.print("Днём ловит мух и ест.");
+        if (getNickname().equals("Уж пресноводный"))
+            System.out.print("Днём выслеживает Лягушек, убивает и ест. ");
 
     }
-
     @Override
     public void slip() {
-
+        if (getNickname().equals("Лягушка"))
+            System.out.print(" Ночю не спит - квакает во всё горло. ");
+        if (getNickname().equals("Уж пресноводный"))
+                     System.out.print(" Ночью спит.");
     }
-
     @Override
     public void go() {
-
+        if (getNickname().equals("Лягушка"))
+            System.out.print("СПРАВКА: " + getNickname() + " перемещается по земле прыжками, в воде - плывёт. ");
+        if (getNickname().equals("Уж пресноводный")) {
+            System.out.print("СПРАВКА: " + getNickname() + " ползает по земле, в воде - извиваясь плывёт. ");
+        }
     }
+
 } // class ************************************************************************************************

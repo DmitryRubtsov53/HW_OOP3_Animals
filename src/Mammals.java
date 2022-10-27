@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Mammals extends Animals {
     private String livingEnvironment;  // среда проживания
     private int travelSpeed;           // скорость перемещения в км/ч.
@@ -51,9 +53,11 @@ public class Mammals extends Animals {
     @Override
     public void go() {
         if (getNickname().equals("Газель") || getNickname().equals("Жираф") || getNickname().equals("Лошадь"))
-            System.out.print("Например, " + getNickname() + " перемещается по земле рысью или голопом. ");
+            System.out.print("СПРАВКА: " + getNickname() + " перемещается по земле рысью или голопом. ");
         if (getNickname().equals("Гиена") || getNickname().equals("Тигр")) {
-            System.out.print("Например, " + getNickname() + " может перемещаеться по земле быстро и незаметно. ");
-        } else  System.out.print("Например, " + getNickname() + " может перемещаеться по земле и лазить по деревьям. ");
+            System.out.print("СПРАВКА: " + getNickname() + " может перемещаеться по земле быстро и незаметно. ");
+        } else  System.out.print("СПРАВКА: " + getNickname() + " может перемещаеться по земле и лазить по деревьям. ");
     }
+
+
 } // class ************************************************************************************************

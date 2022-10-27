@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.util.Objects;
 
 public abstract class Animals {
 
@@ -22,4 +23,16 @@ public abstract class Animals {
     public abstract void slip();
     public abstract void go();
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Animals animals = (Animals) o;
+        return age == animals.age && Objects.equals(nickname, animals.nickname);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(nickname, age);
+    }
 } // class ************************************************************************************************

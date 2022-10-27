@@ -14,8 +14,11 @@ public class Main {
 
         Mammals.printMammals (mammal);
         System.out.println();
+        System.out.println("Сравним Жирафа с Газелью : " + mammal[0].equals(mammal[1]) + ", Жирафа с Лошадью : " + mammal[2].equals(mammal[1]) + ".");
+        System.out.println();
 
-        mammal[5].go(); mammal[5].eat(); mammal[5].slip(); System.out.println();
+        mammal[5].go(); mammal[5].eat(); mammal[5].slip();
+        System.out.println("\n");
 
         Amphibians[] amphibian = new Amphibians[2];   System.out.println("Земноводные:" + "\n");
 
@@ -24,6 +27,11 @@ public class Main {
 
         Amphibians.printAmphibians (amphibian);
         System.out.println();
+        System.out.println("Сравним Лягушку и Ужа : " + amphibian[0].equals(amphibian[1]) + ".");
+        System.out.println();
+
+        amphibian[0].go(); amphibian[0].eat(); amphibian[0].slip();
+        System.out.println("\n");
 
         Birds[] bird = new Birds[6];   System.out.println("Птицы:" + "\n");
 
@@ -35,6 +43,8 @@ public class Main {
         bird[5] = new Flying("Сокол", 4, "горы", "молненосный");
 
         Birds.printBirds (bird);
+        System.out.println();
+        System.out.println("Сравним Пингвина с Павлином : " + bird[0].equals(bird[1]) + ", Альбатроса с Соколом : " + bird[4].equals(bird[5]) + ".");
         System.out.println();
 
         bird[5].go(); bird[5].eat(); bird[5].slip();

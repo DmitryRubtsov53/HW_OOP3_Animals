@@ -42,9 +42,9 @@ public class Birds extends Animals {
     @Override
     public void go() {
         if (getNickname().equals("Чайка") || getNickname().equals("Албатрос") || getNickname().equals("Сокол"))
-            System.out.print("Например, " + getNickname() + " перемещается по воздуху. ");
+            System.out.print("СПРАВКА: " + getNickname() + " перемещается по воздуху. ");
         if (getNickname().equals("Павлин") || getNickname().equals("Птица Додо") || getNickname().equals("Пингвин")) {
-            System.out.print("Например, " + getNickname() + "перемещается по земле. ");
+            System.out.print("СПРАВКА: " + getNickname() + "перемещается по земле. ");
         }
     }
 } // class ************************************************************************************************
