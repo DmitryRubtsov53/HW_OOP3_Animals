@@ -17,6 +17,11 @@ public class Predators extends Mammals {
 
 // Methods ************************************************************************************************
     public void hunt () {
-         System.out.println("Прячтесь мелкие твари! Выхожу на охоту.");
+         System.out.println("Охотится, когда голодно.");
+    }
+    @Override
+    public String toString() {
+        return getNickname() +": хищник, " + getAge() + " лет, среда обитания - " + getLivingEnvironment() + ", скорость передвижения " + getTravelSpeed()
+                +  " км/ч., тип пищи - " + food + ".";
     }
 } // class ************************************************************************************************

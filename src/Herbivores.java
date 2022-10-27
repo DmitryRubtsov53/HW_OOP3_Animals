@@ -17,6 +17,12 @@ public class Herbivores extends Mammals{
 
 // Methods ************************************************************************************************
     public void graze() {
-        System.out.println("Пастись на лугу так приятно!");
+        System.out.println("Пасется, когда нет рядом хищников.");
+    }
+
+    @Override
+    public String toString() {
+        return getNickname() +": травоядное, " + getAge() + " лет, среда обитания - " + getLivingEnvironment() + ", скорость передвижения " + getTravelSpeed()
+                +  " км/ч., тип пищи - " + food + "." ;
     }
 } // class ************************************************************************************************

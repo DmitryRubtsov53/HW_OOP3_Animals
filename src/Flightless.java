@@ -17,7 +17,12 @@ public class Flightless extends Birds {
     }
 
     // Methods ************************************************************************************************
+    @Override
+    public String toString() {
+        return getNickname() + ": нелетающая птица, " + getAge() + " лет, среда обитания - " + getLivingEnvironment() +
+                ", тип передвижения " + getTypeOfMove() + ".";
+    }
     public void walk() {
-        System.out.println("Гуляю, пока нет хищников.");
+        System.out.println("Гулет, пока нет хищников.");
     }
 } // class ************************************************************************************************

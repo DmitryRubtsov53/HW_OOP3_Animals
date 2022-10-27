@@ -17,8 +17,34 @@ public class Amphibians extends Animals {
 
         setLivingEnvironment(livingEnvironment);
     }
+
 // Methods ************************************************************************************************
     public void walk() {
-        System.out.println("Плыву охотиться.");
+        System.out.println("Охотится в воде.");
+    }
+    @Override
+    public String toString() {
+        return getNickname() + ": земноводное, " + getAge() + " лет, среда обитания - " + getLivingEnvironment() +
+                ".";
+    }
+    public static void printAmphibians (Amphibians[] amphibian) {
+        for (Amphibians el : amphibian) {
+            System.out.println(el);
+        }
+    }
+
+    @Override
+    public void eat() {
+
+    }
+
+    @Override
+    public void slip() {
+
+    }
+
+    @Override
+    public void go() {
+
     }
 } // class ************************************************************************************************

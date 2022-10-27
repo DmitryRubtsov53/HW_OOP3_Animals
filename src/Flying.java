@@ -15,7 +15,12 @@ public class Flying extends Birds {
         setTypeOfMove(typeOfMove);
     }
 // Methods ************************************************************************************************
+@Override
+public String toString() {
+    return getNickname() +": летающая птица, " + getAge() + " лет, среда обитания - " + getLivingEnvironment() +
+            ", тип передвижения " + getTypeOfMove() +  ".";
+}
     public void fly() {
-        System.out.println("Летаю выше облаков.");
+        System.out.println("Летает над морем и сушей.");
     }
 } // class ************************************************************************************************

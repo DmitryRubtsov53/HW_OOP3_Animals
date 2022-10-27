@@ -1,6 +1,6 @@
 import java.time.LocalDate;
 
-public class Animals {
+public abstract class Animals {
 
     private String nickname;
     private  int age;
@@ -18,8 +18,8 @@ public class Animals {
         this.age = age >= 0 ? age : 0;
     }
 // Methods ************************************************************************************************
-//    public void eat();
-//    public void slip();
-//    public void move();
+    public abstract void eat();
+    public abstract void slip();
+    public abstract void go();
 
 } // class ************************************************************************************************
