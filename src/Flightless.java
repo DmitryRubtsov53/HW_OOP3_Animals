@@ -7,7 +7,7 @@ public class Flightless extends Birds {
     public String getTypeOfMove() { return typeOfMove;
     }
     public void setTypeOfMove(String typeOfMove) {
-        this.typeOfMove = (typeOfMove != null && typeOfMove.isEmpty() && typeOfMove.isBlank()) ? typeOfMove : "fly" ;
+        this.typeOfMove = (typeOfMove != null && !typeOfMove.isEmpty() && !typeOfMove.isBlank()) ? typeOfMove : "fly" ;
     }
     // constructors *******************************************************************************************
     public Flightless (String nickname,int age, String livingEnvironment, String typeOfMove) {

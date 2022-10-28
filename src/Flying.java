@@ -7,7 +7,7 @@ public class Flying extends Birds {
     public String getTypeOfMove() { return typeOfMove;
     }
     public void setTypeOfMove(String typeOfMove) {
-        this.typeOfMove = (typeOfMove != null && typeOfMove.isEmpty() && typeOfMove.isBlank()) ? typeOfMove : "fly" ;
+        this.typeOfMove = (typeOfMove != null && !typeOfMove.isEmpty() && !typeOfMove.isBlank()) ? typeOfMove : "fly" ;
     }
 // constructors *******************************************************************************************
     public Flying(String nickname,int age, String livingEnvironment, String typeOfMove) {

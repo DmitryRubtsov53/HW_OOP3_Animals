@@ -1,4 +1,3 @@
-import java.util.Objects;
 
 public class Mammals extends Animals {
     private String livingEnvironment;  // среда проживания
